@@ -7,8 +7,9 @@ else()
     set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
 endif()
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-project(lives_in_gd VERSION 1.0.0)
+project(lives_in_gd VERSION 1.1.0)
 
 add_library(${PROJECT_NAME} SHARED
     src/main.cpp
